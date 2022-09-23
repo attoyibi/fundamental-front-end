@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        {{header}}
+    </header>
+    <div  class="container card">
+        <div >
+            card1
+        </div>
+        <div class="">
+            card2
+        </div>
+        
+    </div>
+    <footer>
+        {{footer}}
+    </footer>
+</body>
+</html>
+
+<style type="text/css">
+    body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    min-height: 100vh;
+    margin: 0;
+    paddings: 0;
+   
+}
+header{
+  background-color: grey;
+  flex-grow: 1;
+}
+
+.container{
+    border-color: black;
+    flex-grow: 1; 
+    display: flex;
+
+}
+.card{
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+footer{
+    background-color: grey;
+    flex-grow: 0;
+    
+}
+</style>
